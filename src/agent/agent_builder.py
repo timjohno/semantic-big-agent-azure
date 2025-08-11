@@ -68,7 +68,7 @@ def build_agent(claim_text):
     kernel.add_plugin(InterestRate(), plugin_name="InterestRate")
     kernel.add_plugin(Counterfactual(), plugin_name="Counterfactual")
     kernel.add_plugin(SurvivabilityEstimator(), plugin_name="SurvivabilityEstimator")
-    kernel.add_plugin(StructureLoanData(kernel), plugin_name="StructureClaimData")
+    kernel.add_plugin(StructureLoanData(kernel), plugin_name="StructureLoanData")
 
 
 
