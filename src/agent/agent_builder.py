@@ -1,6 +1,6 @@
 import streamlit as st
 # Plugin classes
-from kernel_functions.mock_database_connectordatabase_connector import MockDatabaseConnector
+from kernel_functions.mock_database_connector import MockDatabaseConnector
 from kernel_functions.risk_evaluator import RiskEvaluator
 from kernel_functions.survivability_estimator import SurvivabilityEstimator
 from kernel_functions.counterfactual import Counterfactual
