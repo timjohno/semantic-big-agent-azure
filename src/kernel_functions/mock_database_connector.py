@@ -1,6 +1,6 @@
 from typing import Annotated
 import re
-from rapidfuzz import process, fuzz
+from fuzzywuzzy import process
 from semantic_kernel.functions import kernel_function
 import numpy as np
 
@@ -27,7 +27,6 @@ class MockDatabaseConnector:
         best_match, score, _ = process.extractOne(
             norm_input,
             list(norm_to_original.keys()),
-            scorer=fuzz.token_sort_ratio
     )
         if score >= threshold:
             return PREDEFINED_COMPANIES[best_match]
