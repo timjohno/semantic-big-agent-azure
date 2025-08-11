@@ -14,6 +14,8 @@ class MockDatabaseConnector:
         
         organisation_name = loan_data.get("organisation_name")
         data = self.lookup_or_fallback(organisation_name)
+        print('requesting data for:', organisation_name)
+        print(data)
         return data
 
     def lookup_or_fallback(self, company_name, threshold=85):
