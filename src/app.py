@@ -21,8 +21,8 @@ def get_message_content(message) -> str:
     return str(message.content)
 
 # Page config
-st.set_page_config(page_title="Kainos Underwriting Assistant", layout="wide")
-st.title("Kainos Agentic Underwriting Assistant")
+st.set_page_config(page_title="Kainos Loan Approval Assistant", layout="wide")
+st.title("Kainos Agentic Loan Approval Assistant")
 
 # Initialize session state variables
 if "messages" not in st.session_state:
@@ -39,7 +39,7 @@ if "output" not in st.session_state:
 # Sidebar
 st.sidebar.image(knos_path, width=200)
 st.sidebar.header("🔧 How can I help?")
-st.sidebar.text("I'm an agentic insurance underwriting assistant; able to support you with analysing businesses insurance profiles, providing premium estimates, assessing a company's risk profile and more")
+st.sidebar.text("I'm an agentic loan approval assistant; able to support you with analysing businesses risk profile, survivability, loan approval and more.")
 
 
 # --- Clear history ---
@@ -212,27 +212,25 @@ with static_container:
 
     with st.expander("🧠 What This Demo Does", expanded=True):
         st.markdown("""
-        This demo showcases a conversational underwriter assistant built with **Microsoft Semantic Kernel**, **Amazon Bedrock**, **Amazon Dynamo DB** and **Amazon SageMaker**.
+        This demo showcases a conversational loan approval assistant built with **Microsoft Semantic Kernel**, **Azure OpenAI**, **Azure Cosmos DB* and **Azure ML**.
 
-        It acts like a professional insurance consultant, combining memory, functions, and decision-making tools to help process claims and customer questions — all in real-time.
+        It acts like a professional loan approval consultant, combining memory, functions, and decision-making tools to help process loan requests and customer questions — all in real-time.
         """)
 
     with st.expander("🚀 Key Capabilities"):
         st.markdown("""
         - 🔍 **Document Understanding**  
-        Upload policy documents or claim descriptions — the assistant understands and stores them for later use.
+        Upload loan requests — the assistant understands and stores them for later use.
 
         - 🧠 **Long-Term Memory with Semantic Search**  
-        The assistant stores claims and documents in collections and can retrieve the most relevant ones when needed, just like human memory.
+        The assistant stores loan requests and documents in collections and can retrieve the most relevant ones when needed, just like human memory.
 
         - 🏷️ **Model Calling**  
-        Able to call external models such as risk scoring or fraud detection tools.
+        Able to call external models such as risk scoring or survivability tools.
 
         - ✅ **Augmented Decision-Making**  
-        Approves, rejects, or refers claims using embedded decision logic.
+        Approves, rejects, or refers loan applications using embedded decision logic.
 
-        - ⚖️ **Regulatory Compliance Checks**  
-        Evaluates decision language against **UK Consumer Duty** principles.
         """)
 
     with st.expander("🧩 How Agentic AI Works Here"):
