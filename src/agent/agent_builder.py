@@ -36,6 +36,7 @@ You may be asked to:
 - Determine whether loan is approvable, you will need survivability score and credit risk score from those models first
 - Determine interest rate, you will need survivability score and credit risk score from those models first
 - Use the database when you think it is necessary to get more information about the company
+- The database contains financial data about the companies, which can be used to assess credit risk, survivability, and interest rates. 
 
 If a large document has been pasted into the chat, use StructureLoanData to structure its contents and use the output for any function that takes a `claim_data` parameter.
 
