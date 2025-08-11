@@ -40,8 +40,7 @@ You may be asked to:
 - Use the database when you think it is necessary to get more information about the company
 
 
-If a large document has been pasted into the chat, use StructureLoanData to structure its contents and use the output for any function that takes a `loan_data` parameter.
-
+You can try and extract structured data from the chat using the StructureLoanData plugin, which will help you understand the loan application better. With any message
 Keep responses brief—no more than a few paragraphs—and always respond only to what the user has asked, when they ask it. 
 """
 
