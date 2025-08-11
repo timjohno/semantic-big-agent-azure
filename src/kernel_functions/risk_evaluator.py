@@ -10,7 +10,7 @@ class RiskEvaluator:
     @kernel_function(description="Use a model to predict the chance small business has of defaulting on the loan")
     async def assess_risk(
         self,
-        claim_data: Annotated[dict, "Structured claim data with fields like coverage_amount and region_of_operation."],
+        loan_data: Annotated[dict, "Structured loan data with fields like lona_amount and region_of_operation."],
     ) -> dict:
         
         return {
