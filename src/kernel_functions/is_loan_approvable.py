@@ -10,7 +10,7 @@ class IsLoanApprovable:
     @kernel_function(description="Should the loan be approved")
     async def is_loan_approvable(
         self,
-        claim_data: Annotated[dict, "Structured company data."],
+        loan_data: Annotated[dict, "Structured company data."],
         risk_score = 60,
         survival_prob = 0.6,
         loan_amount = 1000000

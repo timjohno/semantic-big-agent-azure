@@ -37,7 +37,7 @@ You may be asked to:
 - Determine interest rate, you will need survivability score and credit risk score from those models first
 - Use the database when you think it is necessary
 
-If a large document has been pasted into the chat, use StructureClaimData to structure its contents and use the output for any function that takes a `claim_data` parameter.
+If a large document has been pasted into the chat, use StructureLoanData to structure its contents and use the output for any function that takes a `claim_data` parameter.
 
 Keep responses brief—no more than a few paragraphs—and always respond only to what the user has asked, when they ask it. 
 """
