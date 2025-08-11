@@ -31,7 +31,7 @@ class MockDatabaseConnector:
             list(norm_to_original.keys()),
     )
         if score >= threshold:
-            return PREDEFINED_COMPANIES[best_match]
+            return PREDEFINED_COMPANIES[norm_to_original[best_match]]
         else:
             return self.generate_random_datapoint(np.random.choice(["good", "medium", "bad"]))
 
