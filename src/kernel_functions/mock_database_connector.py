@@ -26,7 +26,7 @@ class MockDatabaseConnector:
         norm_to_original = {self.normalise_name(name): name for name in PREDEFINED_COMPANIES.keys()}
 
         # Fuzzy match on normalised names
-        best_match, score, _ = process.extractOne(
+        best_match, score = process.extractOne(
             norm_input,
             list(norm_to_original.keys()),
     )
