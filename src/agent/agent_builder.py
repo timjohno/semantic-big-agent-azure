@@ -4,7 +4,7 @@ from kernel_functions.database_connector import DatabaseConnector
 from kernel_functions.risk_evaluator import RiskEvaluator
 from kernel_functions.survivability_estimator import SurvivabilityEstimator
 from kernel_functions.counterfactual import Counterfactual
-from kernel_functions.structure_claim_data import StructureClaimData
+from kernel_functions.structure_loan_data import StructureLoanData
 from kernel_functions.vector_memory import VectorMemoryRAGPlugin
 from kernel_functions.is_loan_approvable import IsLoanApprovable
 from kernel_functions.interest_rate import InterestRate
