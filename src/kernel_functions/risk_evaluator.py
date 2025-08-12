@@ -13,7 +13,7 @@ class RiskEvaluator:
         loan_data: Annotated[dict, "Structured loan data with fields like loan_amount and organisation_name."],
         financial_data: Annotated[dict, "Structured financial data of the company."]
     ) -> dict:
-        financial_data['loan_amount'] = loan_data.get('loan_amount', 0)
+        financial_data['loan_amount'] = int(loan_data.get('loan_amount', 0))
         return {
             "risk_score": self.interpret_risk_score(financial_data),
             "service_used": self.runtime,
