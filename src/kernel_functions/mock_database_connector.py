@@ -10,7 +10,7 @@ class MockDatabaseConnector:
     async def retrieve_data(
         self,
         loan_data: Annotated[dict, "Structured loan object containing organisation_name."]
-    ) -> dict:
+    ) -> Annotated[dict, "Structured company financial data."]:
         
         organisation_name = loan_data.get("organisation_name")
         data = self.lookup_or_fallback(organisation_name)
