@@ -103,7 +103,7 @@ PREDEFINED_COMPANIES = {
         "current_ratio": 1.2,
         "revenue_growth": 0.03,
         "sector": "Technology",
-        "location": "Glasgow"
+        "location": "Leeds"
     },
     "SolarTrack": {
         "ebitda_margin": 0.04,
