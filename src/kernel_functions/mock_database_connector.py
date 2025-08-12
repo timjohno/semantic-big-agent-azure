@@ -101,7 +101,7 @@ PREDEFINED_COMPANIES = {
         "ebitda_margin": 0.12,
         "debt_to_equity": 1.5,
         "current_ratio": 1.2,
-        "revenue_growth": 0.03,
+        "revenue_growth": 0.08,
         "sector": "Technology",
         "location": "Leeds"
     },

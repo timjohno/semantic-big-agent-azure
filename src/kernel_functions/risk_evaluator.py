@@ -71,8 +71,8 @@ class RiskEvaluator:
         if company_features['revenue_growth'] < 0:
             flags['revenue_growth'] = "Increase risk: Negative revenue growth"
             total_score += 1
-        elif company_features['revenue_growth'] > 0.1:
-            flags['revenue_growth'] = "Decrease risk: Revenue growth above 10%"
+        elif company_features['revenue_growth'] > 0.7:
+            flags['revenue_growth'] = "Decrease risk: Revenue growth above 7%"
             total_score -= 1
         else:
             flags['revenue_growth'] = "Neutral: Revenue growth moderate"
