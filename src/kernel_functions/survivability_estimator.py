@@ -1,4 +1,5 @@
 import math
+import numpy as np
 from typing import Annotated
 from semantic_kernel.functions import kernel_function
 
@@ -91,5 +92,5 @@ class SurvivabilityEstimator:
 
         # Logistic probability
         prob = logistic(score)
-
+        prob = np.clip(prob, 0.1, 0.9)  # Ensure probability is within (0, 1)
         return prob, flags
