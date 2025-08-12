@@ -48,6 +48,7 @@ You may be asked to:
 - Key thresholds for loan approval:
   - Above 50% risk score or below 50% survival probability results in rejection
   - Loan amount above 100,000 with risk score above 30% results in rejection
+  - Only suggesting lowering the amount if the risk score is above 30% and the loan amount is above 100,000
 
 
 
