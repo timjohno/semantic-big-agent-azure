@@ -18,8 +18,10 @@ class SurvivabilityEstimator:
         financial_data: Annotated[dict, "Structured financial data of the company."]
     ) -> dict:
         financial_data['loan_amount'] = int(loan_data.get('loan_amount', 0))
+        prob, flags = self.calculate_probability(financial_data)
         return {
-            "probability": self.calculate_probability(financial_data),
+            "probability": prob,
+            "flags": flags,
             "service_used": self.runtime,
             "model_used": self.endpoint_name 
         }

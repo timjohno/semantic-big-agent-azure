@@ -18,8 +18,10 @@ class RiskEvaluator:
         financial_data: Annotated[dict, "Structured financial data of the company."]
     ) -> dict:
         financial_data['loan_amount'] = int(loan_data.get('loan_amount', 0))
+        probability, flags = self.interpret_risk_score(financial_data)
         return {
-            "risk_score": self.interpret_risk_score(financial_data),
+            "risk_score": probability,
+            "flags": flags,
             "service_used": self.runtime,
             "model_used": self.endpoint_name
         }
