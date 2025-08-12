@@ -1,6 +1,10 @@
-import streamlit as st
+import math
 from typing import Annotated
 from semantic_kernel.functions import kernel_function
+
+
+def sigmoid(x):
+    return 1 / (1 + math.exp(-x))
 
 class RiskEvaluator:
     def __init__(self):
