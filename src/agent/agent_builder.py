@@ -32,11 +32,12 @@ Wait for specific instructions from the user before taking any action. Do not pe
 You may be asked to:
 - Use StructureLoanData to structure the loan application in the chat, and use the output for any function that takes a `loan_data` parameter.
 - The database contains financial data about the companies, use DatabaseConnector to retrieve it. The output is structured financial data of the company and can be used in any function that takes a `financial_data` parameter.
-- Assess the credit risk profile of an organisation based on model outputs, we are trying to predict the chance of the business of defaulting on the loan. Please wtite a narrative about the risk profile of the business, using the financial data and the risk score
-- Check the survivability of a small business using our model. It predicts the chance of the business surviving for 3 years.
-- Use our counterfactuals model to figure out what it would take for a company to be approved
+- Please wtite a narrative about the risk profile of the business, using the financial_data. Once you have done this pause to ask for confirmation before proceeding.
+- Assess the credit risk profile of an organisation based on model outputs, we are trying to predict the chance of the business of defaulting on the loan. Express the output as a percentage of default.
+- Check the survivability of a small business using our model. It predicts the chance of the business surviving for 3 years. Express the output as a percentage of survival.
 - Determine whether loan is approvable, you will need survivability score and credit risk score from those models first
 - Determine interest rate, you will need survivability score and credit risk score from those models first
+- Use our counterfactuals model to figure out what it would take for a company to be approved
 - Use the database when you think it is necessary to get more information about the company
 
 
