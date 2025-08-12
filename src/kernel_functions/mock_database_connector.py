@@ -94,7 +94,6 @@ PREDEFINED_COMPANIES = {
         "debt_to_equity": 0.5,
         "current_ratio": 2.1,
         "revenue_growth": 0.12,
-        "loan_amount": 30000,
         "sector": "Sustainable Manufacturing",
         "location": "Manchester"
     },
@@ -103,7 +102,6 @@ PREDEFINED_COMPANIES = {
         "debt_to_equity": 1.5,
         "current_ratio": 1.2,
         "revenue_growth": 0.03,
-        "loan_amount": 75000,
         "sector": "Technology",
         "location": "London"
     },
@@ -112,7 +110,6 @@ PREDEFINED_COMPANIES = {
         "debt_to_equity": 3.5,
         "current_ratio": 0.8,
         "revenue_growth": -0.02,
-        "loan_amount": 120000,
         "sector": "Renewable Energy",
         "location": "Birmingham"
     }
