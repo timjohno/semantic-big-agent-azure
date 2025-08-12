@@ -72,7 +72,8 @@ class SurvivabilityEstimator:
             "Retail": -1,
             "Manufacturing": 0,
             "SaaS": 2,
-            "Renewable": 1
+            "Renewable": 1,
+            "Technology": -1,
         }
         sector_adj = sector_effects.get(company_features['sector'], 0)
         score += sector_adj
