@@ -17,7 +17,7 @@ class IsLoanApprovable:
             return {
                 "verdict": False
             }
-        if loan_data['loan_amount'] > 100_000 and risk_score > 0.3:
+        if int(loan_data['loan_amount']) > 100_000 and risk_score > 0.3:
             return {
                 "verdict": False
             }
