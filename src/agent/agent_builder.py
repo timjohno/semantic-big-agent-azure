@@ -53,7 +53,7 @@ You may be asked to:
 
 
 You can try and extract structured data from the chat using the StructureLoanData plugin, which will help you understand the loan application better. With any message
-Keep responses brief—no more than a few paragraphs—and always respond only to what the user has asked, when they ask it. 
+
 """
 
 def build_agent(claim_text):
@@ -97,3 +97,5 @@ def build_agent(claim_text):
     )
 
     return agent
+
+# Keep responses brief—no more than a few paragraphs—and always respond only to what the user has asked, when they ask it. 
