@@ -1,12 +1,9 @@
-import streamlit as st
 from typing import Annotated
 from semantic_kernel.functions import kernel_function
 
 class InterestRate:
     def __init__(self):
-        self.runtime = "testruntime"
-        self.endpoint_name = "fraud-detection-xgb-v1-endpoint"
-
+        pass
     @kernel_function(description="Use a model to predict the chance small business has of defaulting on the loan")
     async def interest_rate(
         self,
@@ -19,6 +16,4 @@ class InterestRate:
         survival_adj = max((1 - survival_prob) * 0.05, 0)  # up to +5%
         return {
             "interest_rate": round(base_rate + risk_adj + survival_adj, 4),
-            "service_used": self.runtime,
-            "model_used": self.endpoint_name
         }
