@@ -10,10 +10,10 @@ class IsLoanApprovable:
     async def is_loan_approvable(
         self,
         loan_data: Annotated[dict, "Structured loan data with fields like loan_amount and organisation_name."],
-        risk_score: Annotated[dict, "Risk score from a model."],
-        survival_prob: Annotated[dict, "Survival probability from a model."],
+        risk_score: Annotated[float, "Risk score from a model."],
+        survival_prob: Annotated[float, "Survival probability from a model."],
     ) -> dict:
-        if risk_score['probability'] > 0.5 or survival_prob['probability'] < 0.5:
+        if risk_score > 0.5 or survival_prob < 0.5:
             return {
                 "verdict": False
             }
